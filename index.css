@@ -1,20 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "poppins";
 }
 
 body {
   margin: 0;
-  height: 200vh;
+  height: auto;
+  font-size: 3vw;
 }
 
 ul {
-  border-radius: 12px;
-  border: white solid;
-  border-width: 2px;
-  width: 30%;
+  text-align: left;
+  padding: 35px;
+  border-radius: 20px;
+  background-color: #0f41b4;
+  -webkit-filter: drop-shadow(0px 0px 50px #0f41b4);
+          filter: drop-shadow(0px 0px 50px #0f41b4);
+  width: 80%;
+  font-size: 2vw;
 }
 
 a {
@@ -25,20 +30,22 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .title.light {
   color: white;
   font-family: "poppins";
   font-weight: bold;
-  font-size: 200%;
 }
 
 .main-title {
@@ -52,12 +59,12 @@ a {
   color: black;
   font-family: "poppins";
   font-weight: bold;
-  font-size: 8vw;
+  font-size: 300%;
 }
 
 span {
   font-family: "poppins";
-  background: linear-gradient(45deg, #3d1bff, #3f2aff);
+  background-color: #225de6;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -66,13 +73,8 @@ span {
 p {
   font-family: "poppins";
   text-align: left;
-  width: 80%;
-  font-size: 22px;
+  font-size: 3vw;
   font-weight: 400;
-}
-
-img {
-  border-radius: 34px;
 }
 
 .section1 {
@@ -84,34 +86,45 @@ img {
 }
 
 .section2 {
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   width: 100%;
-  scroll-snap-align: start;
-  color: #e2dfff;
-  background: linear-gradient(45deg, #3d1bff, #3f2aff);
+  color: white;
+  background-color: #225de6;
   padding-top: 2%;
   padding-bottom: 2%;
   margin: 0;
-  padding-left: 5%;
+}
+
+p {
+  background-color: #1546b9;
+  padding: 10px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 @media screen and (max-width: 650px) {
-  .main-title {
-    font-size: 10vw;
-  }
-  .secondary-title {
-    font-size: 5.5vw;
-  }
   .lists {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .lists ul {
     width: 95%;
+    font-size: 3vw;
   }
 }
 /*# sourceMappingURL=index.css.map */
