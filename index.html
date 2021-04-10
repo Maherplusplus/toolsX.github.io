@@ -1,191 +1,117 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-family: "poppins";
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-body {
-  margin: 0;
-  height: auto;
-  font-size: 3vw;
-}
+    <meta charset="UTF-8" />
 
-ul {
-  text-align: left;
-  padding: 35px;
-  border-radius: 20px;
-  background-color: #0f41b4;
-  -webkit-filter: drop-shadow(0px 0px 30px #0b3596);
-  filter: drop-shadow(0px 0px 30px #0b3596);
-  width: 80%;
-  font-size: 2vw;
-}
+    <title>Maher</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="section1">
+      <div id="particles-js" class="particles"></div>
+      <h1 onclick="name_clicked()" class="main-title">
+        <span>Maher</span>Safadi<span>.</span>
+      </h1>
 
-a {
-  color: white;
-}
+      <button onclick="print_box()">Print Maher's Resume</button>
+    </div>
 
-.lists {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
-}
+    <div class="section2">
+      <div class="title light">
+        <h1>Summary</h1>
+      </div>
 
-.title.light {
-  color: white;
-  font-family: "poppins";
-  font-weight: bold;
-}
+      <p>
+        i'm currently at my 3rd year studying Computer Science at NNU, i chose
+        this major because programming has been a hobby to me for many previous
+        years, i currently work as a software technician and full time web
+        developer.
+      </p>
+      <img
+        class="iphone"
+        src="iphone.png"
+        alt="a picture of an iphone"
+        width="15%"
+      />
+      <br />
+      <a class="fb" href="https://www.facebook.com/0MaherSafadi"
+        >My facebook profile</a
+      >
 
-.main-title {
-  top: 40%;
-  width: 100%;
-  position: relative;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-  text-align: center;
-  color: black;
-  font-family: "poppins";
-  font-weight: bold;
-  font-size: 300%;
-}
+      <div class="lists">
+        <div id="education">
+          <h1>Education background:</h1>
+          <ul>
+            <li>I studied 7 years in Canada(until 2nd grade)</li>
+            <li>
+              I chose the new academic stream "Technological" for 11th grade and
+              Tawjihi
+            </li>
+            <li>I'm currently studying Computer Science at NNU</li>
+          </ul>
+        </div>
+        <div
+          onmouseover="turn_green()"
+          onmouseout="remove_green()"
+          class="work-experiences"
+        >
+          <h1>Work experiences:</h1>
 
-span {
-  font-family: "poppins";
-  background-color: #225de6;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+          <ul>
+            <li>I'm a previous fully experienced Swift iOS developer.</li>
+            <li>I'm also a previuos experienced C# Game developer.</li>
+            <li>
+              when i was 12, C++ was the first programming language i learned
+              and started working with.
+            </li>
+            <li>
+              I'm currently a fulltime Web developer and im currently working on
+              a website called <a href="https://toolsx.github.io">ToolsX</a>, as
+              you can see it's where the theme of this website has been inspired
+              from.
+            </li>
+          </ul>
+        </div>
 
-p {
-  font-family: "poppins";
-  text-align: left;
-  font-size: 3vw;
-  font-weight: 400;
-}
+        <div class="hobbies"></div>
+        <h1>Hobbies:</h1>
+        <ul>
+          <li>
+            In my empty time i like to work on my programming projects as i find
+            it entertaining
+          </li>
+          <li>
+            I also like going out for walks in the nature rather than crowded
+            city places.
+          </li>
+          <li>I'm currently studying Computer Science at NNU</li>
+        </ul>
+      </div>
+    </div>
+  </body>
 
-.section1 {
-  height: 100vh;
-  width: 100%;
-  scroll-snap-align: start;
-  background: white;
-  margin: 0;
-}
+  <script src="particles.js"></script>
+  <script src="app.js"></script>
 
-.section2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  text-align: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  width: 100%;
-  color: white;
-  background-color: #225de6;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  margin: 0;
-}
+  <script>
+    function name_clicked() {
+      alert(
+        "Welcome to Maher's site, please let me know if you have any questions"
+      );
+    }
 
-button {
-  position: absolute;
-  left: 50px;
-  bottom: 50px;
-  border: none;
-  background-color: #225de6;
-  border-radius: 15px;
-  width: 170px;
-  height: 75px;
-  color: white;
-  padding: 10px;
-  font-size: 18px;
-  -webkit-filter: drop-shadow(0px 0px 20px #979797);
-  filter: drop-shadow(0px 0px 20px #979797);
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
+    function turn_green() {
+      document.getElementById("education").style.color = "green";
+    }
+    function remove_green() {
+      document.getElementById("education").style.color = "white";
+    }
 
-button:hover {
-  background-color: #00dbac;
-  color: #3a3a3a;
-}
-
-.work-experiences,
-#education {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-
-ul {
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
-}
-
-p {
-  background-color: #1546b9;
-  padding: 10px;
-  font-family: "Courier New", Courier, monospace;
-}
-
-.particles {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-
-@media screen and (max-width: 650px) {
-  .lists {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-  .lists ul {
-    width: 95%;
-    font-size: 3vw;
-  }
-}
-/*# sourceMappingURL=index.css.map */
+    function print_box() {
+      window.print();
+    }
+  </script>
+</html>
