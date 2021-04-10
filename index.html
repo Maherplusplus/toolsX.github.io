@@ -10,8 +10,13 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div id="particles-js" class="section1">
-      <h1 class="main-title"><span>Maher</span>Safadi<span>.</span></h1>
+    <div  class="section1">
+      <div id="particles-js" class="particles"></div>
+      <h1 onclick="name_clicked()" class="main-title">
+        <span>Maher</span>Safadi<span>.</span>
+      </h1>
+       
+      <button onclick="print_box()">Print Maher's Resume</button>
     </div>
 
     <div class="section2">
@@ -45,21 +50,28 @@
             Tawjihi
           </li>
           <li>I'm currently studying Computer Science at NNU</li>
-        </ul>
-        <h1>Work experiences:</h1>
-        <ul>
-          <li>I'm a previous fully experienced Swift iOS developer.</li>
-          <li>I'm also a previuos experienced C# Game developer.</li>
-          <li>
-            when i was 12, C++ was the first programming language i learned and
-            started working with.
-          </li>
-          <li>
-            I'm currently a fulltime Web developer and im currently working on a
-            website called <a href="https://toolsx.github.io">ToolsX</a>, as you
-            can see it's where the theme of this website has been inspired from.
-          </li>
-        </ul>
+        </ul></div>
+
+    
+          <h1>Work experiences:</h1>
+              <div onmouseover="turn_green(this)" onmouseout="remove_green(this)" class="work-experiences">
+          <ul>
+            <li>I'm a previous fully experienced Swift iOS developer.</li>
+            <li>I'm also a previuos experienced C# Game developer.</li>
+            <li>
+              when i was 12, C++ was the first programming language i learned
+              and started working with.
+            </li>
+            <li>
+              I'm currently a fulltime Web developer and im currently working on
+              a website called <a href="https://toolsx.github.io">ToolsX</a>, as
+              you can see it's where the theme of this website has been inspired
+              from.
+            </li>
+          </ul>
+        </div>
+
+        <div class="hobbies"></div>
         <h1>Hobbies:</h1>
         <ul>
           <li>
@@ -78,4 +90,25 @@
 
   <script src="particles.js"></script>
   <script src="app.js"></script>
+
+  <script>
+    function name_clicked() {
+      alert(
+        "Welcome to Maher's site, please let me know if you have any questions"
+      );
+
+
+    }
+
+    function turn_green(x){
+    x.style.color = "green"
+    }
+    function remove_green(x){
+    x.style.color = "white"
+    }
+
+    function print_box(){
+      window.print();
+    }
+  </script>
 </html>
