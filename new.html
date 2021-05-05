@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="new.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Form</title>
+  </head>
+  <body>
+      <div>
+    <h2>Intership application</h2>
+
+    <p>
+      Please fill out the form below and hit submit to be considered for the
+      intership.
+    </p>
+
+    <form action="#" id="form" onsubmit="return false" >
+      <fieldset>
+        <legend>Personalia:</legend>
+        <label for="fname">First name:</label>
+        <input type="text" id="1" name="fname" value="" required /><br />
+
+        <label for="lname">Last name:</label>
+        <input type="text" id="2" name="lname" value="" required/><br />
+
+        <label for="website">Personal website:</label>
+        <input type="url" id="3" name="website" value="" /><br />
+
+        <label for="phone">Enter a phone number:</label>
+        <input
+          type="tel"
+          id="4"
+          name="phone"
+          value=""
+          pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+          placeholder="123-45-678" 
+        /><br />
+
+        <label for="email">Enter your email:</label>
+        <input type="email" id="5" name="email" value="" required/><br />
+
+        <label for="username">Username:</label>
+        <input type="text" id="6" name="username" value="" required/><br />
+
+        <label for="password">Password:</label>
+        <input type="password" id="7" name="password" value="" required/><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Education:</legend>
+        <label for="degree">Degree:</label>
+        <select id="8" name="cars">
+            
+            <option value="Associate">Associate</option>
+            <option value="Bachelor">Bachelor</option>
+            <option value="Masters" selected>Masters</option>
+            <option value="Ph.D.">Ph.D.</option>
+            <option value="other">other</option>
+</select><br>
+        <label for="fdate">When will you graduate:</label>
+        <input type="date" id="9" name="fdate" value="" min="2022-01-01" /><br />
+       
+        Upload you CV and other documents:
+        <input type="file" value="" multiple/>
+      </fieldset>
+
+      <div class="buttons" style="display: flex;flex-direction: row;justify-content: center;">
+        <button onClick="Validate()"type="submit" id="submit">
+            Submit
+            </button>
+      <button id="save" type="save" value="Save">Save</button>
+      <button type="reset" value="Reset">Reset</button>
+      
+      
+    </div>
+    </form>
+    <div>
+       
+       
+        <script src="new.js"></script>
+  </body>
+</html>
