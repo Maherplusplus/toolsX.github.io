@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "poppins";
 }
 
@@ -17,7 +17,7 @@ ul {
   border-radius: 20px;
   background-color: #0f41b4;
   -webkit-filter: drop-shadow(0px 0px 30px #0b3596);
-  filter: drop-shadow(0px 0px 30px #0b3596);
+          filter: drop-shadow(0px 0px 30px #0b3596);
   width: 80%;
   font-size: 2vw;
 }
@@ -32,14 +32,14 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .title.light {
@@ -91,17 +91,17 @@ p {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
   -ms-flex-line-pack: center;
-  align-content: center;
+      align-content: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -113,10 +113,23 @@ p {
   margin: 0;
 }
 
+.second-page {
+  position: absolute;
+  font-size: 40px;
+  width: 100vw;
+  text-align: center;
+  bottom: 180px;
+  color: #919191;
+  -webkit-filter: drop-shadow(0px 0px 20px #979797);
+          filter: drop-shadow(0px 0px 20px #979797);
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
 button {
   position: absolute;
   left: 50px;
-  bottom: 50px;
+  top: 50px;
   border: none;
   background-color: #225de6;
   border-radius: 15px;
@@ -126,7 +139,7 @@ button {
   padding: 10px;
   font-size: 18px;
   -webkit-filter: drop-shadow(0px 0px 20px #979797);
-  filter: drop-shadow(0px 0px 20px #979797);
+          filter: drop-shadow(0px 0px 20px #979797);
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
@@ -143,21 +156,21 @@ button:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-line-pack: center;
-  align-content: center;
+      align-content: center;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
 
 ul {
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 p {
@@ -176,12 +189,12 @@ p {
 @media screen and (max-width: 650px) {
   .lists {
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .lists ul {
     width: 95%;
